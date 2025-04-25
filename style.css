@@ -1,22 +1,157 @@
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
   text-align: center;
-  padding: 20px;
+  flex-direction: column;
 }
 
 header {
-  background-color: #e66000;
+  background-color: #ff7139;
   color: white;
   padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 4px solid #d1d5db;
 }
 
-section {
-  margin: 30px auto;
-  max-width: 600px;
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-video, audio {
-  margin-top: 15px;
+header p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.about-mozilla {
+  margin-bottom: 40px;
+}
+
+.about-mozilla h2 {
+  font-size: 2em;
+  color: #ff7139;
+  margin-bottom: 20px;
+}
+
+.about-mozilla .image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mozilla-logo {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Products Section */
+.products {
+  margin-bottom: 40px;
+}
+
+.products h2 {
+  font-size: 2em;
+  color: #ff7139;
+  margin-bottom: 20px;
+}
+
+.products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.products li strong {
+  color: #333;
+}
+
+/* Video Section */
+.video-section {
+  margin-bottom: 40px;
+}
+
+.video-section h2 {
+  font-size: 2em;
+  color: #ff7139;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.cta {
+  background-color: #ff7139;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.cta h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #ff7139;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #ff7139;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #ff7139;
+  border-color: #ff7139;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-top: 40px;
 }
