@@ -2,37 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mozilla Splash Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Welcome to Mozilla</h1>
     <p>Explore the power of open web technologies.</p>
   </header>
 
   <main>
-    <section>
+    <section class="about-mozilla">
       <h2>About Mozilla</h2>
-      <img src="assets/mozilla.png" alt="Mozilla Logo" width="300">
+      <div class="image-container">
+        <!-- Placeholder for the image -->
+        <img src="assets/mozilla.png" alt="Mozilla Logo" class="mozilla-logo">
+      </div>
       <p>Mozilla is a free software community founded in 1998 by members of Netscape. Our mission is to ensure the Internet is a global public resource, open and accessible to all.</p>
     </section>
 
-    <section>
-      <h2>Watch Mozilla's Journey</h2>
-      <video width="400" controls>
-        <source src="assets/mozilla-video.mp4" type="video/mp4">
-        Your browser does not support HTML video.
-      </video>
+    <section class="products">
+      <h2>Our Products</h2>
+      <p>Mozilla offers a wide range of products and services, including:</p>
+      <ul>
+        <li><strong>Firefox</strong> - A fast, private, and secure browser</li>
+        <li><strong>Firefox Developer Edition</strong> - Tools for web developers</li>
+        <li><strong>Firefox Focus</strong> - A privacy-focused browser for mobile</li>
+        <li><strong>Mozilla VPN</strong> - Protect your online privacy</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Listen to the Mozilla Podcast</h2>
-      <audio controls>
-        <source src="assets/mozilla-audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+   
+    <section class="video-section">
+      <h2>Learn More About Mozilla</h2>
+      <div class="video-container">
+        <!-- Placeholder for the video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5h5QdpW23Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </section>
+
+   
+    <section class="cta">
+      <h2>Join Mozilla's Mission</h2>
+      <p>We believe in an internet that is open, accessible, and inclusive for all. Join our efforts and contribute to a better internet for everyone.</p>
+      <a href="https://www.mozilla.org/en-US/about/mission/" target="_blank" class="cta-button">Learn More</a>
+    </section>
+
   </main>
+
+  <footer>
+    <p>&copy; 2025 Mozilla Foundation</p>
+  </footer>
+
 </body>
 </html>
