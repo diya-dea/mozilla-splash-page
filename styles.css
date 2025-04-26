@@ -1,137 +1,131 @@
-/* Write your CSS code here *//* Base Reset */
-* {
+/* Global Styles */
+:root {
+  --font-primary: 'Zilla Slab', serif;
+  --font-secondary: 'Nunito Sans', sans-serif;
+  --color-primary: #e62434; /* Mozilla Red */
+  --color-secondary: #3032d9; /* Firefox Blue */
+  --color-background: #fafafa; /* Light Gray */
+  --color-text: #333333; /* Dark Gray */
+  --color-link: #3032d9; /* Firefox Blue */
+  --color-link-hover: #0d10bf; /* Darker Blue */
+  --spacing-unit: 16px;
+  --border-radius: 8px;
+}
+
+/* Body and Layout */
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--color-background);
+  color: var(--color-text);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;
-  color: #222;
-  padding: 20px;
 }
 
-/* Layout */
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: var(--spacing-unit);
 }
 
-/* Headings */
-h1, h2 {
-  color: #d73a49; /* Mozilla red */
+h1, h2, h3 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
 }
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-unit);
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-top: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
 }
 
-/* Paragraphs */
+/* Typography */
 p {
-  margin-bottom: 1em;
   font-size: 1rem;
-  line-height: 1.7;
+  margin-bottom: var(--spacing-unit);
 }
 
-/* Image Section */
-.image-container {
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: var(--spacing-unit);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+.about-mozilla .image-container {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: var(--spacing-unit);
 }
 
-.mozilla-logo {
+.about-mozilla img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
 }
 
-/* Product List */
 .products ul {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .products li {
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-unit);
 }
 
-/* Video */
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-top: var(--spacing-unit);
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-/* Call to Action */
 .cta {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-left: 6px solid #d73a49;
-  margin-top: 30px;
-  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-unit);
+  border-radius: var(--border-radius);
+  text-align: center;
 }
 
 .cta-button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #d73a49;
-  color: #fff;
+  background-color: white;
+  color: var(--color-primary);
+  padding: var(--spacing-unit);
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: var(--border-radius);
+  font-weight: bold;
 }
 
 .cta-button:hover {
-  background-color: #b92e3b;
+  background-color: var(--color-primary);
+  color: white;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
+  background-color: var(--color-background);
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  body {
-    padding: 10px;
-  }
+  padding: var(--spacing-unit);
+  font-size: 0.875rem;
+  color: var(--color-text);
 }
