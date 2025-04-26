@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
   --font-primary: 'Zilla Slab', serif;
   --font-secondary: 'Nunito Sans', sans-serif;
@@ -12,7 +12,7 @@
   --border-radius: 8px;
 }
 
-/* Body and Layout */
+
 body {
   font-family: var(--font-secondary);
   background-color: var(--color-background);
